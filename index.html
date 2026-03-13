@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ola!!</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+<button onclick="showClickMessage()">คลิกที่นี่</button>
+<p id="demo"></p>
+
+<script>
+function showClickMessage() {
+    document.getElementById("demo").innerHTML = "ยินดีต้อนรับเข้าสู่โปรไฟล์ของผม";
+    document.getElementById("demo").style.color = "green";
+}
+</script> 
+
+<input type="text" id="username" placeholder="กรอกชื่อของคุณ">
+<button onclick="showName()">แสดงผล</button>
+<p id="result"></p>
+
+<script>
+function showName() {
+    let name = document.getElementById("username").value;
+
+    if(name === "") {
+        document.getElementById("result").innerHTML = "กรุณากรอกชื่อก่อนดำเนินการ";
+        result.style.color = "red";
+    } else {
+        document.getElementById("result").innerHTML = "สวัสดี " + name +"ยินดีต้อนรับ";
+        result.style.color = "blue";
+    }
+}
+</script> 
+  <body>
+      <h1 class="title">Ola!!</h1>
+      <p id="currentTime"></p>
+       <script src="script.js"></script>
+      <header>
+        <h1>My Contact</h1>
+        <nav>
+          <ul>
+          <li><a href="https://www.facebook.com/gg.wasdfk">Facebook</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+      	<section>
+	 <h2>My self</h2>
+	 <p>ชื่อ นายไพรัช เทียบประเสริฐกูล ปัจจุบันศึกษาอยู่ที่ มหาวิทยาลัยราชภัฏนครราชสีมา คณะ วิทยาศาสตร์และเทคโนโลยี สาขา เทคโนโลยีดิจิทัลมีเดีย </p>
+	 <img src="https://altv-cms-images.s3.amazonaws.com/content/image_1628316396598110590.jpg" alt="my photo" width="104" height="110">
+      	</section>
+      	<section>
+	 <h2>My hobby</h2>
+	 <ul>
+	   <li>ดูหนัง</li>
+	   <li>ฟังเพลง</li>
+	   <li>ตามข่าวโลกออนไลน์</li>
+	 </ul>
+      	</section>
+      </main>
+      <footer><p>Thank you.</p></footer>
+  </body>
+</html>
